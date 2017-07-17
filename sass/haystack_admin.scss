@@ -1,0 +1,65 @@
+@import "compass";
+@import "breakpoint";
+@import "compass/css3/transform";
+
+.wrap.hay {
+	.haystack_stats_row {
+		td {
+			padding:0px;
+		}
+		h4 {
+			margin-bottom: 10px;
+		}
+	}
+	.haystack_status {
+		@include breakpoint(780px) {
+			max-width:665px;
+		}
+	    position: relative;
+	    width: 100%;
+	    height: 8px;
+	    background-color: rgba(0,0,0,0.1);
+	    border-radius: 4px;
+	    overflow:hidden;
+	    margin-bottom: 10px;
+	}
+	.haystack_status_inner {
+	    position: absolute;
+	    width: 0%;
+	    height: 100%;
+	    background-color: #32373c;
+	}
+	th {
+	    text-align:left;
+	    font-weight:normal;
+	    padding: 0px 20px 0px 0px;
+	    max-width:200px;
+	}
+	th, td {
+	    vertical-align: middle;
+	}
+	.hide {
+		display:none;
+	}
+	.check-item, .radio-item {
+	    vertical-align:middle;
+	    margin:5px 0px;
+	}
+	.button-primary {
+		margin-right:10px;
+	}
+
+	#haystack_progress {
+		width:100%;
+		border:1px solid #ccc;
+		border-radius:4px;
+		overflow:hidden;
+		span {
+			width:0%;
+			max-width:100%;
+			display:block;
+			background:#23282d;
+			min-height:8px;
+		}
+	}
+}
